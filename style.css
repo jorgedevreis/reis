@@ -31,12 +31,12 @@
     /* text css above hero image*/
     .hero_title {
         padding-top: 10rem;
-        font-size: 4.5rem;
-        color: white;
+        font-size: 5.5rem;
+        
     }
     .hero_desc {
         font-size: 2rem;
-        color: white;
+        
     }
     .hero_text {
         text-align: center;
@@ -48,11 +48,12 @@
         
     }
     .text-left {
-      color: white;
+      
     }
 
     .image_about {
         width: 100%;
+        margin-bottom: auto;
       
     }
 
@@ -60,10 +61,16 @@
         background: #000000;
         ;   
     }
+    .text-left2 {
+      margin-top: 10;
+      font-size: 1.3rem;
+      padding: 1rem;
+    }
+  
 
     /* text about */
     .text-left {
-        color: rgb(255, 255, 255);
+        color: #26344a;
         
     }
 
@@ -71,19 +78,19 @@
         color: rgb(255, 255, 255);
     }
  
-      .contato {
+      .contact-me {
         min-height: 100vh;
         display: grid;
         place-items: left;
         padding: 1rem;
-        background: #272a37;
+        background: #9a9b9e;
         color:rgb(255, 255, 255)
         
       }
       
       form {
         width: 100%;
-        max-width: 30rem;
+        max-width: 20rem;
       }
       
       label,
@@ -97,20 +104,19 @@
       textarea,
       button {
         width: 100%;
-        font: inherit;
-        padding: 1.25rem;
+        padding: 1.30rem;
         font-weight: 700;
       }
       
       input,
       textarea {
-        margin-bottom: 1rem;
-        color: white;
-        background: #323644;
-        border: 0.125rem solid transparent;
+        margin-bottom: 2rem;
+        color: rgb(0, 0, 0);
+        background: #c2c3c9;
+        border: 0.300rem solid transparent;
         border-radius: 1.125rem;
-        transition: border-color 0.3s, 
-        box-shadow 0.3s;
+        transition: border-color 0.1s, 
+        box-shadow 0.1s;
       }
       
       input:hover,
@@ -119,12 +125,12 @@
       textarea:focus {
         outline: none;
         border-color: #1d90f5;
-        box-shadow: 0 0 0 0.3125rem #26344a;
+       
       }
       
       label {
         margin-bottom: 0.5rem;
-        color: #84868f;
+        color: #000000;
       }
       
       textarea {
@@ -149,7 +155,7 @@
       
       button:disabled {
         cursor: not-allowed;
-        background: #555b69;
+        background: #aeb1b8;
       }
       
       .success,
@@ -172,7 +178,7 @@
     .fa-instagram:hover,
     .fa-linkedin:hover, 
     .fa-github:hover {
-        color: #fff;
+        color:#1c70d3;
     }
     .fab {
         color: #000000;
