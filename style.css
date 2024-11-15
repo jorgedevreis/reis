@@ -20,21 +20,22 @@
   /* hero background image */
   .bgimage {
     height: 100vh;
-    margin: 0;
-    background: url('images/herolimage.jpg');
+    background: url('images/herolimage.jpg') no-repeat center center;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 0;
-
-  }
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
   /* text css above hero image*/
   .hero_title {
-    padding-top: 10rem;
-    font-size: 5.5rem;
-
+    .hero_text 
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   }
+  
 
   .hero_desc {
     font-size: 2rem;
@@ -119,18 +120,15 @@
 }
 
 .skill-level {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 5px;
-    align-items: center;  
-    padding-right: 10px;
-    height: 30px;
-    background-color: #1d90f5;
+  .skill-level {
+    font-size: 1rem;
+    padding: 5px;
     color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 20px 0 0 20px;
-    transition: width 0.6s ease;
+    background-color: #1d90f5;
+    text-align: right;
+    border-radius: 0 20px 20px 0;
+}
+
 }
 
   .contact-me {
@@ -231,18 +229,111 @@
     cursor: pointer;
   }
 
-  .fa-instagram:hover,
-  .fa-linkedin:hover,
-  .fa-github:hover {
-    color: #1c70d3;
-  }
 
-  .fab {
-    color: #000000;
-  }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  /* Blog Landing Section */
+.blog-landing h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.blog-card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-card .card-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: #333;
+}
+
+.blog-card .card-text {
+  font-family: 'Heebo', sans-serif;
+  font-weight: 300;
+  color: #666;
+}
+
+.blog-card .btn-primary {
+  background-color: #007bff;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+}
+
+.blog-card .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Responsividade adicional */
+@media (max-width: 768px) {
+  .blog-landing h1 {
+      font-size: 2rem;
   }
+}
+.social-icons a {
+  margin: 0 10px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.footer {
+  background-color: #26344a;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer .social-icons {
+  margin-bottom: 15px;
+}
+
+.footer .social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #1d90f5;
+}
+
+.footer .copyright {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.footer .social-icons a:hover {
+  color: #1c70d3;
+  transform: scale(1.1);
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer .social-icons a {
+      font-size: 1.2rem;
+      margin: 0 5px;
+  }
+}
+
+
+
+
